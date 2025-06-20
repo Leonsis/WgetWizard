@@ -1,0 +1,38 @@
+header {
+    padding: 20px 0;
+    box-shadow: 4px 4px 12px rgba(0, 0, 0, 0.2);
+    background: var(--White);
+}
+
+.logo h1 {
+    font-size: 2rem;
+}
+
+body {
+    background: url('../img/bg.jpg');
+    background-size: cover;
+}
+
+main .bloco {
+    box-shadow: 4px 4px 12px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    border-radius: 15px;
+    background-color: var(--White);
+    margin: 20px 0;
+}
+
+main h2 {
+    font-size: 1.5rem;
+    color: var(--blck);
+}
+
+.accordion-button:not(.collapsed) {
+    background-color: var(--White) !important;
+    box-shadow: none !important;
+}
+
+.accordion-item {
+    color: var(--bs-accordion-color);
+    background-color: var(--bs-accordion-bg);
+    border: none !important;
+}
