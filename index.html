@@ -101,9 +101,19 @@
                 }
 
                 try {
-                    
+                    const response = await fetch('https://localhost:3000/wget', {
+                        method: 'POST',
+                        headers: {
+                            'Content-Type': 'application/json'                    
+                        },
+                        body: JSON.stringify({ url })
+                    });
+
+                    const result = await response.text();
+                    alert(result);
                 } catch (error) {
-                    
+                    console.error('Erro ao enviar: ', err);
+                    alert('Erro ao enviar a url. Veja o console para detalhes.');
                 }
             });
         </script>
